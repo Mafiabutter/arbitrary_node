@@ -6,10 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jack Johnson</title>
     <style>
-        /*  */
+        @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+        #name {
+            color: aliceblue;
+            font-size: 75px;
+            font-weight: 100;
+        }
+        .segment {
+            display: flex;
+            justify-content: space-around; /* Will probably change to center w/ some kind of padding */
+        }
+        .block {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+             /* Something like this */
+        }
+        .middle-block {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: flex-start; */
+        }
+        .name-header {
+            align-items: center;
+            background-color: darkslategrey; /* Might change but I think this looks nice */
+            display: flex;
+            height: 200px;
+            justify-content: space-around;
+        }
+        .graphic-display {
+            background-color: darkslategrey;
+        }
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 0;
+        }
+        img {
+            border-radius: 50px;
+            height: 500px;
+            padding: 25px;
+        }
+        p {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <!--  -->
+    <div class="name-header">
+        <h1 id="name">Jack Johnson</h1>
+    </div>
+    <div class="segment"> <!-- Aim and picture -->
+        <div class="block">
+            <h1>Junior Software Developer</h1>
+            <p>I am a soon-to-be graduate in Computer Science and I am<br> massively excited to be able to put the skills I've learned<br> in and out of class to work solving real problems in a world<br> that leverages computing technologies for nearly everything</p> <!-- Something stupid here -->
+        </div>
+        <div class="block">
+            <img src="../images/portrait.jpeg">
+        </div>
+    </div>
+    <div class="segment">
+        <div class="middle-block">
+            <h1>Education</h1>
+            <h2>Covenant College</h2>
+            <p>BA in Computer Science, minor in History (May 2022)<br>3.3 GPA cumulative, 3.9 GPA Senior year</p>
+        </div>
+        <div class="middle-block">
+            <h1>Work Experience</h1>
+            <h2>Covenant College<br>Student IT worker</h2>
+            <p>Worked in the Technology Services department at<br>the school, manning the front desk, but also maintaining<br>the college's computer & printer network and occasionally<br> taking on small-scale code & code testing projects<br><br>4 years</p>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="block">
+        <!-- Skills and proficiencies -->
+        <h1>Skills and Proficiencies</h1>
+        <div class="segment">
+            <!-- Technical & General side by side -->
+            <div class="block">
+                <h2>Technical</h2>
+                <!-- Header for technical -->
+                <div class="segment">
+                    <!-- Multiple list columns -->
+                    <div class="block">
+                        <!-- Lists go down -->
+                        <h3>Languages</h3>
+                            <ul>
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>HTML, CSS, Javascript</li>
+                            <li>MIPS assembly</li>
+                            <li>SML</li>
+                            <li>SQL, MySQL</li>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>Haskell</li>
+                        </ul>
+                    </div>
+                    <div class="block">
+                        <h3>Misc.</h3>
+                        <ul>
+                            <li>Linux, Bash</li>
+                            <li>Visual Studio Code</li>
+                            <li>Netbeans</li>
+                            <li>Node.js</li>
+                            <li>Game engine development<br>(LWJGL, three.js)</li>
+                            <li>Data Structures &<br>Algorithms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <h2>General</h2>
+            </div>
+        </div>
+        <br><br><br>
+        <a href="../index.html">back</a>
+    </div>
+    <br>
 </body>
 </html>
